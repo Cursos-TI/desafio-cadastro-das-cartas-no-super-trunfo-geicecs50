@@ -30,10 +30,15 @@ int main() {
 
     printf("Digite o Número de Pontos Turísticos\n");
     scanf("%d", &pontos_turisticos);
-
+    
+    //calcula os dados da cidade
+    densidade_populacional = populacao / area;
+    pib_per_capita = pib / populacao;
         
     // Exibição dos Dados das Cartas:
     printf("Carta 1:\n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d\n Área: %.3fkm²\n PIB: R$ %.2f\n Número de Pontos Turísticos: %i\n", estado, codigo_carta, nome_cidade, populacao, area, pib, pontos_turisticos);
+    printf("Densidade Populacional: %.2f\n", densidade_populacional);
+    printf("PIB per Capita: %.2f\n", pib_per_capita);
     
     printf("\n \n");
 
@@ -60,9 +65,14 @@ int main() {
 
     printf("Digite o Número de Pontos Turísticos\n");
     scanf("%d", &pontos_turisticos2);
-        
+
+    //calcula os dados da cidade
+    densidade_populacional2 = populacao2 / area2;
+    pib_per_capita2 = pib2 / populacao2;
+    
     // Exibição dos Dados das Cartas:
     printf("Carta 2:\n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d\n Área: %.3fkm²\n PIB: R$ %.2f\n Número de Pontos Turísticos: %i\n", estado2, codigo_carta2, nome_cidade2, populacao2, area2, pib2, pontos_turisticos2);
-
+    printf("Densidade Populacional: %.2f\n", densidade_populacional2);
+    printf("PIB per Capita: %.2f\n", pib_per_capita2);
     return 0;
 }
